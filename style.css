@@ -1,0 +1,868 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+/* jumbotron */
+.jumbotron-img {
+  background-image: url(galleri/earth.jpg);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.jumbotron-img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  margin-left: -17px;
+  bottom: 0;
+}
+
+.judul-jumbotron {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: azure;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.h2-jumbotron {
+  color: azure !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.search-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(46, 42, 42);
+  background: radial-gradient(circle, rgba(46, 42, 42, 0.39866368910845584) 0%, rgba(46, 42, 42, 0.4042659300048145) 100%);
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 40px;
+  /* padding: 5px; */
+  /* width: 250px !important; */
+  /* display: flex; */
+  /* margin-left: 450px; */
+}
+.search-txt {
+  height: 100%;
+}
+
+.search-box:hover > .search-txt,
+.search-txt:focus {
+  width: 240px;
+  padding: 0 6px 0 10px;
+  top: 50px;
+}
+
+.search-box:hover > .search-btn {
+  background: blue;
+}
+
+.search-btn {
+  color: white !important;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  /* padding-top: 5px;
+  padding-left: 4px; */
+  padding: 5px;
+  text-decoration: none;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+/* jumbotron akir */
+
+/* about */
+.about {
+  margin-top: -100px;
+  display: flex;
+  position: relative;
+  z-index: 5;
+  color: white;
+  /* background-color: black; */
+}
+
+/* akhir about */
+
+/* container 2 */
+.container-img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  margin-left: -17px;
+  bottom: 0;
+}
+
+.container-img {
+  background-image: url(galleri/sky\ with\ ngarai.jpg);
+  /* background-position: 0 -300px; */
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.container-img::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  margin-left: -17px;
+  top: 0;
+}
+
+.h2-jumbotron-2 {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.judul-jumbotron-2 {
+  padding-top: 180px;
+
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: azure;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.h2-jumbotron-2 {
+  color: azure !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.btn-cntnr {
+  border-radius: 20px;
+}
+
+/* akhir container 2 */
+.footer {
+  background-color: black;
+  padding: 70px 0;
+}
+
+.container-foo {
+  max-width: 1170px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.row-foo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #111ad1;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #111ad1;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  background-color: #ffffff;
+  color: #111ad1;
+}
+
+@media (max-width: 768px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  /* jumbotron */
+
+  .judul-jumbotron {
+    padding-top: 140px;
+    font-size: 75px;
+    letter-spacing: 10px;
+  }
+
+  .h2-jumbotron {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  /* akhir jumbotron */
+
+  /* about */
+  .about h3 {
+    font-size: 35px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+  /* akhir about */
+
+  /* container */
+  .container-img {
+    margin-top: -125px;
+  }
+  /* akhir container */
+
+  /* promosi */
+  .promosi-img {
+    background-color: black;
+    position: relative;
+    height: 5100px;
+  }
+
+  /* akhir promosi */
+
+  /* gambar gerak */
+  .img-gerak {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+
+  .slides input {
+    display: none;
+  }
+
+  .slide {
+    width: 20%;
+    transition: 2s;
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .slides .slide > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .slides .slide h1 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .slides .slide h3 {
+    color: rgb(102, 102, 102);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .slides .slide p {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  /* nav manual */
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn {
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover {
+    border: 2px solid #111ad1;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+
+  /* nav auto */
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+
+  .navigation-auto div {
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .navigation-manual .manual-btn {
+    border: 2px solid #111ad1;
+  }
+
+  /* akhir gambar gerak */
+
+  /* bawah gambaer geraj */
+  .gmbr-org {
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(galleri/starry\ sky.jpg);
+    background-size: cover;
+  }
+
+  .gmbr-org h1 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .gmbr-org h3 {
+    color: rgb(102, 102, 102);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .gmbr-org p {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  /* akhir bawah gmbr gerak */
+
+  /* indomie windah */
+  .vidio-vid-text {
+    width: 200px;
+  }
+  /* akhir indomie */
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* Desktop vers */
+@media (min-width: 992px) {
+  /* Navbar */
+  .navbar {
+    width: 1116px;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+  }
+  .navbar-brand,
+  .nav-link {
+    font-size: 25px;
+  }
+
+  .h2-navbar {
+    color: azure !important;
+    margin-left: 400px;
+  }
+  .nav-link {
+    /* font-size: 13px; */
+    margin-right: 23px;
+    color: azure !important;
+  }
+
+  .navbar-brand {
+    color: azure !important;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #111ad1;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  /* jumbotron */
+  .jumbotron-img {
+    margin-top: -77px;
+    background-image: url(galleri/earth.jpg);
+    background-size: cover;
+    height: 876px;
+    position: relative;
+  }
+
+  .jumbotron-img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    margin-left: -17px;
+    bottom: 0;
+  }
+
+  .jumbotron .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .judul-jumbotron {
+    padding-top: 250px;
+    font-size: 75px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: azure;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .h2-jumbotron {
+    font-size: 17px;
+    font-weight: 300;
+    color: azure !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .deskri-judul {
+    width: 400px;
+  }
+
+  .search-box {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(46, 42, 42);
+    background: radial-gradient(circle, rgba(46, 42, 42, 0.39866368910845584) 0%, rgba(46, 42, 42, 0.4042659300048145) 100%);
+
+    height: 40px;
+    border-radius: 40px;
+    /* padding: 5px; */
+    /* width: 250px !important; */
+    /* display: flex; */
+    /* margin-left: 450px; */
+  }
+  .search-txt {
+    height: 100%;
+  }
+
+  .search-box:hover > .search-txt,
+  .search-txt:focus {
+    width: 240px;
+    padding: 0 6px 0 10px;
+    top: 50px;
+  }
+
+  .search-box:hover > .search-btn {
+    background: blue;
+  }
+
+  .search-btn {
+    color: white !important;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    /* padding-top: 5px;
+    padding-left: 4px; */
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+  }
+
+  .about {
+    margin-top: -210px;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    color: white;
+    /* background-color: black; */
+  }
+
+  .container-img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    margin-left: -17px;
+    bottom: 0;
+  }
+
+  .about-p {
+    font-size: 15px;
+  }
+
+  .container-img {
+    margin-top: -77px;
+  }
+
+  .container-img {
+    background-image: url(galleri/sky\ with\ ngarai.jpg);
+    /* background-position: 0 -300px; */
+    background-size: cover;
+    height: 876px;
+    position: relative;
+  }
+
+  .container-img::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    margin-left: -17px;
+    top: 0;
+  }
+
+  .judul-jumbotron-2 {
+    padding-top: 450px !important;
+  }
+
+  .h2-jumbotron-2 {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .judul-jumbotron-2 {
+    font-size: 75px;
+    letter-spacing: 10px;
+    padding-top: 100px;
+    text-transform: uppercase;
+    color: azure;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+  .h2-jumbotron-2 {
+    color: azure !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .btn-cntnr {
+    border-radius: 20px;
+  }
+
+  .promosi-img {
+    background-color: black;
+    position: relative;
+    height: 5100px;
+  }
+
+  .img-gerak {
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+
+  .slides input {
+    display: none;
+  }
+
+  .slide {
+    width: 20%;
+    transition: 2s;
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .slides .slide > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .slides .slide h1 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .slides .slide h3 {
+    color: rgb(102, 102, 102);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .slides .slide p {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  /* nav manual */
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn {
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover {
+    border: 2px solid #111ad1;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+
+  /* nav auto */
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+
+  .navigation-auto div {
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .navigation-manual .manual-btn {
+    border: 2px solid #111ad1;
+  }
+
+  .gmbr-org {
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(galleri/starry\ sky.jpg);
+    background-size: cover;
+  }
+
+  .gmbr-org h1 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .gmbr-org h3 {
+    color: rgb(102, 102, 102);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .gmbr-org p {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .teleskop .teleskopp {
+    background-image: url(galleri/red\ moon.jpg);
+    background-size: cover;
+    height: 800px;
+    position: relative;
+  }
+
+  .teleskopp::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    margin-left: -4px;
+  }
+
+  .teleskopp-text {
+    z-index: 5;
+  }
+
+  .teleskop .solarr {
+    background-image: url(galleri/purple\ sky.jpg);
+    background-size: cover;
+    height: 800px;
+  }
+
+  .solar-system .image-5 {
+    background-image: url(galleri/bulat.jpg);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    background-position-y: -350px;
+  }
+
+  .radio-sinyal {
+    height: 500px;
+    background-image: url(galleri/planet\ 9.jpg);
+    background-size: cover;
+  }
+
+  .ukr-asw .image-7 {
+    background-image: url(galleri/horizon-2.jpg);
+    background-size: cover;
+    height: 400px;
+  }
+
+  .big-bang .image-8 {
+    background-image: url(galleri/buku.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+    background-position-x: -1px;
+    height: 400px;
+  }
+
+  .bocah .image-9 {
+    background-image: url(galleri/kyubi.jpg);
+    background-size: cover;
+    height: 400px;
+  }
+}
