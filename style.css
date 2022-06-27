@@ -453,7 +453,6 @@ ul {
 @media (min-width: 992px) {
   /* Navbar */
   .navbar {
-    width: 1116px;
     margin: auto;
     position: relative;
     z-index: 5;
